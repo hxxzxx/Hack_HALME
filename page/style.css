@@ -1,0 +1,43 @@
+img{
+    width: 20%;
+}
+body{
+    text-align: center;
+}
+.container{
+    margin-top: 5%;
+    font-size: larger;
+    font-weight: bold;
+}
+#list_1,#list_2{
+    margin-top:5%;
+    margin-left: 24%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 50%;
+    
+    
+}
+
+.container a {
+    text-decoration: none;
+    color:black;
+}
+/* SEARC */
+.Search{
+    margin-top:100px;
+    ;
+}
+#cate,#cate2,#cate3{
+    margin-top: 5%;
+    margin-left:24%;
+    width: 50%;
+    font-weight: bolder;
+    font-size: x-large;
+    display: flex;
+    justify-content: space-around;
+}
+#cate{
+    margin-left: 24.5%;
+}
