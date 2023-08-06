@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>카테고리</title>
 </head>
+
 <body>
     <header>
         <img src="/logo.png" alt="이미지1">
         <h1>식품 종류를 선택해주세요</h1>
     </header>
     <div class="category">
-        <div id="cate">
-            <button type="button">과일</button>
-            <button type="button">유제품</button>
-            <button type="button">육류</button>
-        </div>
-        <div id="cate2">
-            <button>채소</button>
-            <button type="button">수산물</button>
-            <button type="button">쌀</button>
-        </div>
-        <div id="cate3">
-            <button type="button">견과류</button>
-            <button type="button">건어물</button>
-            <button type="button">잡곡</button>
-        </div>
+        <form action="Result.html" method="get">
+            <div id="cate">
+                <button type="submit" name="product" value="과일">과일</button>
+                <button type="submit" name="product" value="유제품">유제품</button>
+                <button type="submit" name="product" value="육류">육류</button>
+            </div>
+            <div id="cate2">
+                <button type="submit" name="product" value="채소">채소</button>
+                <button type="submit" name="product" value="수산물">수산물</button>
+                <button type="submit" name="product" value="쌀">쌀</button>
+            </div>
+            <div id="cate3">
+                <button type="submit" name="product" value="견과류">견과류</button>
+                <button type="submit" name="product" value="건어물">건어물</button>
+                <button type="submit" name="product" value="잡곡">잡곡</button>
+            </div>
+        </form>
     </div>
 </body>
+
 </html>
