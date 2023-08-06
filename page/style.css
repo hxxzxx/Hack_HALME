@@ -1,3 +1,4 @@
+/* Main */
 img{
     width: 20%;
 }
@@ -24,11 +25,14 @@ body{
     text-decoration: none;
     color:black;
 }
+
 /* SEARC */
 .Search{
     margin-top:100px;
     ;
 }
+
+/* CATEGORY */
 #cate,#cate2,#cate3{
     margin-top: 5%;
     margin-left:24%;
@@ -41,3 +45,19 @@ body{
 #cate{
     margin-left: 24.5%;
 }
+.category button{
+    border: 0;
+    background-color: transparent;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+#search_result{
+    width: 30%;
+    height: 1cm;
+    border: solid;
+    margin-bottom: 1cm;
+}
+
+
+/* RESULT */
