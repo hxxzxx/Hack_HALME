@@ -15,9 +15,9 @@
     <div style="display: flex; justify-content: center; align-items: top; margin: 1cm">
         <img src="/logo.png" alt="상품 이미지" style="border: 1px solid black;">
         <span style="margin: 1cm; font-size: larger; font-weight: bold;">
-            <p>상품명~~~~~~~~~~~~~~~~~~~~~~</p>
+            <p id="result_Name" style="text-align: left;"></p>
             <p style="text-align: left;">20000원</p>
-            <div style="display: flex; justify-content: space-around;">
+            <div style="display: flex;">
                 <button>장바구니에 담기</button>
                 <button>결제하기</button>
             </div> 
@@ -27,6 +27,15 @@
     <div>
         <button>상세정보</button>
     </div>
+<script>
+    
+const url = window.location.search;
 
+const urlvalues = new URLSearchParams(url);
+document.getElementById('result_Name').innerText=urlvalues.get('productName');
+
+
+    
+</script>
 </body>
 </html>
