@@ -14,28 +14,21 @@
     </header>
     <div class="Result">
         <input type="text" id="search_result" name="search_result"
-            style="text-align: center; font-weight: bolder; font-size: larger;" readonly>
+            style="text-align: left; font-weight: bolder; font-size: larger; border-color: #00573F;" readonly>
         <hr />
-    <div id="product_template">
-        <form action="Details.html" method="get">
-            <div style="display: flex; justify-content: center; align-items: top; margin: 1cm">
-                <img src="/logo.png" alt="상품 이미지" style="border: 1px solid black;">
-                <span style="margin: 1cm; font-size: larger; font-weight: bold;">
-                    <input type="text" id="productName" name="productName" value="상품명1" readonly>
-                    <p style="text-align: left;">20000원</p>
-                    <div style="display: flex;">
-                        <button type="submit">구매</button>
-                    </div>
-                </span>
-            </div>
-        </form>
-    </div>
-        <div style="display: flex; justify-content: center; align-items: top; margin: 1cm">
-            <img src="/logo.png" alt="상품 이미지" style="border: 1px solid black;">
-            <span style="margin: 1cm; font-size: larger; font-weight: bold;">
-                <input type="text" id="productName" name="productName" value="상품명2" readonly>
-                <p style="text-align: left;">20000원</p>
-            </span>
+        <div id="product_template">
+            <form action="Details.html" method="get">
+                <div style="display: flex; justify-content: center; align-items: top; margin: 1cm">
+                    <img src="/logo.png" alt="상품 이미지" style="border: 1px solid black;">
+                    <span style="margin: 1cm; font-size: larger; font-weight: bold;">
+                        <input type="text" id="productName" name="productName" value="상품명1" readonly>
+                        <p style="text-align: left;">20000원</p>
+                        <div style="display: flex;">
+                            <button type="submit">구매</button>
+                        </div>
+                    </span>
+                </div>
+            </form>
         </div>
     </div>
     <script src="script.js"></script>

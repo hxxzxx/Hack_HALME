@@ -5,6 +5,14 @@ img{
 body{
     text-align: center;
 }
+#loginButton{
+    width: 10%;
+    height: 1cm;
+    background-color: transparent;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid gray;
+}
 .container{
     margin-top: 5%;
     font-size: larger;
@@ -61,7 +69,17 @@ body{
 
 
 /* RESULT */
-
+#productName{
+    border: 0;
+    font-weight: bolder;
+    font-size: medium;
+}
+#select button{
+    background-color: transparent;
+    font-size: large;
+    font-weight: bold;
+    border: 2px solid gray;
+}
 /* PointCharge */
 
 .pointcharge{
