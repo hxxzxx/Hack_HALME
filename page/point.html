@@ -1,42 +1,41 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>포인트</title>
+    <title>로그인</title>
     <link rel="stylesheet" href="../HalmeStyle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" />
-    <title>상품 검색 결과</title>
 </head>
-
 <body>
-    <header>
-        <img src="/logo.png" alt="이미지1">
-    </header>
-    <div class="Result">
-        <input type="text" id="search_result" name="search_result"
-            style="text-align: left; font-weight: bolder; font-size: larger; border-color: #00573F;" readonly>
-        <hr style="border: 3px solid #D9D9D9;" />
-        <div id="product_template">
-            <form action="Details.html" method="get">
-                <div style="display: flex; justify-content: center; align-items: top; margin: 1cm">
-                    <img src="/logo.png" alt="상품 이미지" style="border: 1px solid black;">
-                    <span style="margin: 1cm; font-size: larger; font-weight: bold;">
-                        <input type="text" id="productName" name="productName" value="상품명1" readonly>
-                        <p style="text-align: left;">20000원</p>
-                        <div style="display: flex;">
-                            <button class="btn btn-outline-dark" type="submit">구매</button>
-                        </div>
-                    </span>
-                </div>
+  
+        <header>
+            <img src="../logo.png">
+            <p style="font-size:30px; text-align: left; margin-left: 10%;">포인트 충전하기</p>
+            <hr style="border: 3px solid #D9D9D9;" />
+        </header>
+
+    
+    <div class="signupDoneWrapper" style="font-size: 40px; margin-bottom: 100px;">
+         포인트 충전을 위해 <span id="date" style="font-weight: bolder;"></span>까지<br>
+          <span id="point"><b>50,000원</b></span>을 입금해주세요.
+          <p style="font-size: 40px;">입금은행 신한은행 123-12345-123456</p>
+         
+          <div style="display: flex; justify-content: center; margin-top: 80px;">
+            <form  action="orderlist.html" method="get">
+                <button type="submit" class="btn btn-outline-dark" style="font-size: 30px; margin-right: 70px;">주문내역 보기</button>
             </form>
-        </div>
+            <form  action="Main.html" method="get">
+            <button type="submit"class="btn btn-outline-dark" style="font-size: 30px;">쇼핑 계속하기</button>
+            </form>
+         </div>
     </div>
+   
     <footer>
         <div>
             <p style="font-size: 30px; font-weight: bolder;">할미 고객센터 1234-5678</p>
@@ -53,7 +52,12 @@
                 COPYRIGHT © 2023 HALME ALL RIGHTS RESERVED</div>
         </div>
     </footer>
-    <script src="script.js"></script>
 </body>
 
+<script>
+    const dt = new Date();
+    var str = dt.getFullYear()+'년 ' +(dt.getMonth()+1)+'월 '+(dt.getDate()+7)+'일';
+    document.getElementById("date").innerText=str;
+
+</script>
 </html>

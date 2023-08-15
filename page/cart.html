@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니</title>
+    <link rel="stylesheet" href="../HalmeStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" />
+</head>
+<body>
+    <header>
+        <img src="../logo.png">
+    </header>
+    <div class="orderWrapper">
+        <div class="selected"> <a href="cart.html">장바구니</a></div>
+        <div class="unselected">주문결제 - 배송지</div>
+        <div class="unselected">주문결제 - 완료</div>
+        <div class="unselected">주문내역 보기</div>
+    </div>
+ 
+    <form class="cartForm" action="payAddress.html" method="get">
+        <!-- 장바구니에 물건이 있는 경우 -->
+        <li class="productWrapper" style=" list-style-type: none;">
+                <ul class="product">
+                    <img id="productImg"src="../logo.png" alt="상품 이미지" style="border: 1px solid black;">
+                    <span style="margin: 1cm; font-size: 40px; font-weight: bold;">
+                        <input  style="display:none;" name="productName" value="상품명1"><p id="productName">상품명~~~~~~~~~~~~~~~~~~~~~~</p></input>
+                        <p id="productPrice"style="float: left;">20000원</p>
+                    </span>
+                    <p style="font-size: 50px; margin: 1cm;" id="productCount">1개</p>
+                    <i class="bi bi-x-lg" id="deleteButton"style="font-size: 40px; margin: 1cm; color:grey;"></i> 
+                </ul>
+        </li>
+
+        <div class="d-grid gap-2 col-4 mx-auto" >
+            <button type="submit"  class="btn btn-outline-dark" style="font-size: 30px; margin-top: 100px; " > 장바구니에 담긴 상품을 구매하기</button> 
+        </div>    
+    </form>
+    
+    <footer>
+        <div>
+            <p style="font-size: 30px; font-weight: bolder;">할미 고객센터 1234-5678</p>
+                <div>평일 09:00~18:00<br>
+                점심시간: 12:00~13:00<br>
+                주말/ 공휴일 휴무</div>
+        </div>
+
+        <div>
+            <p style="font-size: 30px; font-weight: bolder;">회사 정보</p>
+            <div>상호: (주) 할미  대표: 홍길동  주소: 인천광역시 연수구 송도동 12-1 <br>
+                사업자등록번호: 123-45-6789 <br>
+                대표전화: 1234-5678  팩스: 12-3456-78<br> <br>
+                COPYRIGHT © 2023 HALME ALL RIGHTS RESERVED</div>
+        </div>
+    </footer>
+<script src="../cart.js"></script>
+</body>
+</html>
